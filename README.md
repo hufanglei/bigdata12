@@ -10,6 +10,6 @@
 - 二次排序案例
 - 分组排序案例
 - 压缩案例
-- mapjoin 和reducue join案例
-- 倒排索引案例
+- mapjoin 和reducue join案例,多job串联案例(倒排索引案例)
+
 ## 
