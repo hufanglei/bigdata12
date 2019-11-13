@@ -1,0 +1,10 @@
+Inverted index
+倒排索引
+大数据
+hadoop MapReduce hdfs
+Inverted index
+hadoop MapReduce hdfs
+Inverted index
+map
+reduce
+MapReduce
