@@ -12,5 +12,7 @@
 - 压缩案例
 - mapjoin 和reducue join案例,多job串联案例(倒排索引案例)
 - 博客共同好友案例
+- 自定义inputformat案例（合并小文件案例）
+- 自定义outformat案例（根据需求输出不同文件）
 
 ## 
