@@ -11,6 +11,7 @@
     <modules>
         <module>hdfs-demo</module>
         <module>mapreduce-demo</module>
+        <module>zookeeper-demo</module>
     </modules>
 
     <dependencies>
@@ -53,5 +54,13 @@
             <artifactId>junit</artifactId>
             <version>4.12</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.zookeeper/zookeeper -->
+        <dependency>
+            <groupId>org.apache.zookeeper</groupId>
+            <artifactId>zookeeper</artifactId>
+            <version>3.4.10</version>
+        </dependency>
+
     </dependencies>
 </project>

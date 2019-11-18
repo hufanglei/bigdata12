@@ -6,8 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="mapreduce-demo" />
+        <module name="zookeeper-demo" />
         <module name="hdfs-demo" />
+        <module name="mapreduce-demo" />
       </profile>
     </annotationProcessing>
   </component>
