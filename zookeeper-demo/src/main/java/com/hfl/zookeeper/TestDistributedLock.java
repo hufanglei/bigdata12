@@ -43,7 +43,6 @@ public class TestDistributedLock {
             System.out.println("*****手慢了，商品已经被抢光了!!*****");
         }
 
-
     }
 
 

@@ -7,8 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="zookeeper-demo" />
-        <module name="hdfs-demo" />
         <module name="mapreduce-demo" />
+        <module name="hdfs-demo" />
+        <module name="flume-demo" />
       </profile>
     </annotationProcessing>
   </component>
