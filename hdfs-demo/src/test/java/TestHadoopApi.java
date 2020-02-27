@@ -32,7 +32,7 @@ public class TestHadoopApi {
         //设置部分的临时参数
         conf.set("dfs.replication", "2");
         //获取文件系统
-        FileSystem fs = FileSystem.get(new URI("hdfs://bigdata113:9000"), conf, "root");
+        FileSystem fs = FileSystem.get(new URI("hdfs://bigdata111:9000"), conf, "root");
         //要上传的本地文件上传的路径
 //        Path input = new Path("F:\\input\\word.txt");
         Path input = new Path("d:\\soft\\hadoop-2.8.4.tar.gz");
@@ -50,14 +50,14 @@ public class TestHadoopApi {
         //创建配置信息
         Configuration conf = new Configuration();
         //获取文件系统
-        FileSystem fs = FileSystem.get(new URI("hdfs://bigdata113:9000"), conf, "root");
+        FileSystem fs = FileSystem.get(new URI("hdfs://bigdata111:9000"), conf, "root");
         //下载文件
         //boolean delSrc:是否将原文件删除
         //Path src ：要下载的路径
         //Path dst ：要下载到哪
         //boolean useRawLocalFileSystem ：是否校验文件
         fs.copyToLocalFile(false,
-                new Path("hdfs://bigdata113:9000/word.txt"),
+                new Path("hdfs://bigdata111:9000/word.txt"),
                 new Path("F:\\output"),
                 true);
         fs.close();
@@ -75,7 +75,7 @@ public class TestHadoopApi {
         //String user   Linux用户
         FileSystem fs = FileSystem.get(new URI("hdfs://bigdata113:9000"), configuration, "root");
         //3.创建目录
-        fs.mkdirs(new Path("hdfs://bigdata113:9000/idea/aa"));
+        fs.mkdirs(new Path("hdfs://bigdata111:9000/idea/aa"));
         //4.关闭
         fs.close();
         System.out.println("创建文件夹成功");
@@ -92,7 +92,7 @@ public class TestHadoopApi {
         //final URI uri  地址
         //final Configuration conf  配置
         //String user   Linux用户
-        FileSystem fs = FileSystem.get(new URI("hdfs://bigdata113:9000"), conf, "root");
+        FileSystem fs = FileSystem.get(new URI("hdfs://bigdata111:9000"), conf, "root");
         //Path var1   : HDFS地址
         //boolean var2 : 是否递归删除
         fs.delete(new Path("hdfs://bigdata113:9000/idea/bb"), true);
@@ -106,7 +106,7 @@ public class TestHadoopApi {
         // 1 创建配置信息对象
         Configuration configuration = new Configuration();
 
-        FileSystem fs = FileSystem.get(new URI("hdfs://bigdata113:9000"), configuration, "root");
+        FileSystem fs = FileSystem.get(new URI("hdfs://bigdata111:9000"), configuration, "root");
 
         //2 重命名文件或文件夹
         fs.rename(new Path("hdfs://bigdata113:9000/idea/aa"), new Path("hdfs://bigdata113:9000/idea/cc"));
@@ -120,7 +120,7 @@ public class TestHadoopApi {
         //1.创建配置对象
         Configuration conf = new Configuration();
         //2.链接文件系统
-        FileSystem fs = FileSystem.get(new URI("hdfs://bigdata113:9000"), conf, "root");
+        FileSystem fs = FileSystem.get(new URI("hdfs://bigdata111:9000"), conf, "root");
         //3.迭代器
         RemoteIterator<LocatedFileStatus> listFiles = fs.listFiles(new Path("/"), true);
         //4.遍历迭代器
@@ -158,7 +158,7 @@ public class TestHadoopApi {
         Configuration conf = new Configuration();
 
         //2.获取文件系统
-        FileSystem fs = FileSystem.get(new URI("hdfs://bigdata113:9000"), conf, "root");
+        FileSystem fs = FileSystem.get(new URI("hdfs://bigdata111:9000"), conf, "root");
 
         //3.遍历所有的文件
         //List the statuses of the files/directories in the given path if the path is a directory.

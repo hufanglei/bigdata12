@@ -13,9 +13,11 @@
         <module>mapreduce-demo</module>
         <module>zookeeper-demo</module>
         <module>flume-demo</module>
+        <module>azkaban-demo</module>
     </modules>
 
     <dependencies>
+
         <dependency>
             <groupId>org.apache.hadoop</groupId>
             <artifactId>hadoop-common</artifactId>
