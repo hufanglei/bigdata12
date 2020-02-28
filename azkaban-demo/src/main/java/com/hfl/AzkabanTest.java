@@ -1,4 +1,4 @@
-package com.hfl.test;
+package com.hfl;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
