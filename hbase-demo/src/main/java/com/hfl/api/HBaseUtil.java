@@ -1,4 +1,4 @@
-package com.hfl;
+package com.hfl.api;
 
 
 import org.apache.hadoop.conf.Configuration;
@@ -116,7 +116,7 @@ public class HBaseUtil {
 
         byte[][] splitKeys = new byte[regions][];
         //排序 保证你这个分区键是有序得
-        TreeSet<byte[]> treeSet = new TreeSet<>(Bytes.BYTES_COMPARATOR);
+        TreeSet<byte[]> treeSet = new TreeSet<byte[]>(Bytes.BYTES_COMPARATOR);
         for (int i = 0; i < regions; i++) {
             treeSet.add(Bytes.toBytes(keys[i]));
         }

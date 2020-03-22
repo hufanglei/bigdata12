@@ -1,4 +1,4 @@
-package com.hfl;
+package com.hfl.api;
 
 
 import org.apache.hadoop.conf.Configuration;

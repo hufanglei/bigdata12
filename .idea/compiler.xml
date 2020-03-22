@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="flume-demo" />
+        <module name="spark-demo" />
         <module name="mapreduce-demo" />
         <module name="hbase-demo" />
         <module name="zookeeper-demo" />
